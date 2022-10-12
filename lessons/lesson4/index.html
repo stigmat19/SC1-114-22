@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       body{
+        height: 10000px;
+       }
+        /* h1 ~ p:nth-of-type(2), h1 ~ p:nth-of-type(3){
+           color: blue; 
+        } */
+        h1 ~ p{
+            color: blue;
+        }
+        
+        /* h1 + p{
+            color: red;
+        } */
+
+       
+        .menu > li ul a{
+            font-style: italic;
+        }
+        input[type='text']{
+            border: 1px solid red;
+        }
+        input[type='password']{
+            border: 1px solid green;
+        }
+        input[type='email']{
+            border: 1px solid blue;
+        }
+        input[type='number']{
+            border: 1px solid violet;
+        }
+        /* a[href^='http']{
+            color: red;
+        }
+        a[href^='https']{
+            color: green;
+        }
+        a[href$=':8080']{
+            font-style: italic;
+        }
+        a[href*='aliexpress']{
+            font-weight: 900;
+        } */
+        p::selection{
+            background-color: black;
+            color: greenyellow;
+        }
+        h3::before{
+            content: "1111-------- ";
+        }
+        h3::after{
+            content: " --------111";
+        }
+
+        a:link{
+            color: rgb(255, 217, 0);
+        }
+        a:visited{
+            color: rgb(230, 0, 255);
+        }
+        a:active{
+            font-weight: 900;
+        }
+        a:focus{
+            font-style: italic;
+        }
+        a:hover{
+            background-color: aqua;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            width: 25px;
+            height: 25px;
+            border: 1px solid black
+        }
+
+        tr:nth-child(odd) td:nth-child(odd){
+            background-color: #666;
+        }
+        p:nth-of-type(2){
+            font-weight: 900;
+            font-style: italic;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <p>world</p>
+
+    <h1>hello</h1>
+    <h2>test</h2>
+    <h3>cdfdf</h3>
+
+    <p>text</p>
+
+    <p>advert4</p>
+    <p>advert3</p>
+    <p>advert2</p>
+    <p>advert1</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempora ipsam assumenda consequuntur eaque suscipit quia, dolores architecto enim dolorum illo ratione maiores labore blanditiis molestias atque pariatur minima maxime?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempora ipsam assumenda consequuntur eaque suscipit quia, dolores architecto enim dolorum illo ratione maiores labore blanditiis molestias atque pariatur minima maxime?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempora ipsam assumenda consequuntur eaque suscipit quia, dolores architecto enim dolorum illo ratione maiores labore blanditiis molestias atque pariatur minima maxime?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempora ipsam assumenda consequuntur eaque suscipit quia, dolores architecto enim dolorum illo ratione maiores labore blanditiis molestias atque pariatur minima maxime?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempora ipsam assumenda consequuntur eaque suscipit quia, dolores architecto enim dolorum illo ratione maiores labore blanditiis molestias atque pariatur minima maxime?</p>
+
+    <hr>
+    <h3>hello</h3>
+    <ul class="menu">
+        <li>
+            <a href="#">link1</a>
+            <ul>
+                <li>
+                    <a href="#">link2</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="menu1">
+        <li>
+            <a href="#">link1</a>
+            <ul>
+                <li>
+                    <a href="#">link2</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+    <h3>hello</h3>
+    <input type="text" title="hello"> <br>
+    <input type="password"> <br>
+    <input type="email"> <br>
+    <input type="number" title="hello"> <br>
+
+    <hr>
+    <h3>hello</h3>
+    <a href="https://av111.by/">av.by</a> <br>
+    <a href="http://142.93.172.35:8080">142.93.172.35</a>   <br>
+    <a href="https://aliexpress.ru/">aliexpress</a>
+
+
+    <hr>
+
+    <h3>hello</h3>
+
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+</html>
